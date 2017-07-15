@@ -12,6 +12,7 @@ find_package(boost_config)
 
 add_library(boost_chrono_stopwatches INTERFACE
 )
+
 add_library(boost::chrono_stopwatches ALIAS boost_chrono_stopwatches)
 set_property(TARGET boost_chrono_stopwatches PROPERTY EXPORT_NAME chrono_stopwatches)
 

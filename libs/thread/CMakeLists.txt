@@ -37,6 +37,7 @@ add_library(boost_thread
 src/tss_null.cpp
 src/future.cpp
 )
+set_target_properties(boost_thread PROPERTIES FOLDER Boost)
 add_library(boost::thread ALIAS boost_thread)
 set_property(TARGET boost_thread PROPERTY EXPORT_NAME thread)
 

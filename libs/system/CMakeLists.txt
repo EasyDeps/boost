@@ -11,6 +11,7 @@ find_package(boost_predef)
 add_library(boost_system 
 src/error_code.cpp
 )
+set_target_properties(boost_system PROPERTIES FOLDER Boost)
 add_library(boost::system ALIAS boost_system)
 set_property(TARGET boost_system PROPERTY EXPORT_NAME system)
 

@@ -19,6 +19,7 @@ find_package(boost_utility)
 add_library(boost_coroutine 
 src/exceptions.cpp
 )
+set_target_properties(boost_coroutine PROPERTIES FOLDER Boost)
 add_library(boost::coroutine ALIAS boost_coroutine)
 set_property(TARGET boost_coroutine PROPERTY EXPORT_NAME coroutine)
 

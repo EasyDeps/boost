@@ -19,6 +19,7 @@ find_package(boost_utility)
 add_library(boost_random 
 src/random_device.cpp
 )
+set_target_properties(boost_random PROPERTIES FOLDER Boost)
 add_library(boost::random ALIAS boost_random)
 set_property(TARGET boost_random PROPERTY EXPORT_NAME random)
 

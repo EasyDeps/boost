@@ -5,8 +5,8 @@ include(CMakePackageConfigHelpers)
 
 find_package(boost_config)
 
-add_library(boost_assert INTERFACE
-)
+add_library(boost_assert INTERFACE)
+
 add_library(boost::assert ALIAS boost_assert)
 set_property(TARGET boost_assert PROPERTY EXPORT_NAME assert)
 

@@ -18,8 +18,8 @@ find_package(boost_core)
 find_package(boost_config)
 find_package(boost_throw_exception)
 
-add_library(boost_asio INTERFACE
-)
+add_library(boost_asio INTERFACE)
+
 add_library(boost::asio ALIAS boost_asio)
 set_property(TARGET boost_asio PROPERTY EXPORT_NAME asio)
 

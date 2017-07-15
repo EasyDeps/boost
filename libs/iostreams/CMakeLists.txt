@@ -28,6 +28,7 @@ src/mapped_file.cpp
 src/file_descriptor.cpp
 src/gzip.cpp
 )
+set_target_properties(boost_iostreams PROPERTIES FOLDER Boost)
 add_library(boost::iostreams ALIAS boost_iostreams)
 set_property(TARGET boost_iostreams PROPERTY EXPORT_NAME iostreams)
 

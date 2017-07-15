@@ -66,6 +66,7 @@ src/polymorphic_iarchive.cpp
 src/stl_port.cpp
 src/xml_grammar.cpp
 )
+set_target_properties(boost_serialization PROPERTIES FOLDER Boost)
 add_library(boost::serialization ALIAS boost_serialization)
 set_property(TARGET boost_serialization PROPERTY EXPORT_NAME serialization)
 

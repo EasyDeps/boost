@@ -24,6 +24,7 @@ src/thread_clock.cpp
 src/process_cpu_clocks.cpp
 src/chrono.cpp
 )
+set_target_properties(boost_chrono PROPERTIES FOLDER Boost)
 add_library(boost::chrono ALIAS boost_chrono)
 set_property(TARGET boost_chrono PROPERTY EXPORT_NAME chrono)
 

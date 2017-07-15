@@ -31,6 +31,7 @@ src/wave_config_constant.cpp
 src/instantiate_predef_macros.cpp
 src/instantiate_cpp_grammar.cpp
 )
+set_target_properties(boost_wave PROPERTIES FOLDER Boost)
 add_library(boost::wave ALIAS boost_wave)
 set_property(TARGET boost_wave PROPERTY EXPORT_NAME wave)
 

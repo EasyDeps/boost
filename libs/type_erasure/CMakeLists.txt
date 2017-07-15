@@ -19,6 +19,7 @@ find_package(boost_smart_ptr)
 add_library(boost_type_erasure 
 src/dynamic_binding.cpp
 )
+set_target_properties(boost_type_erasure PROPERTIES FOLDER Boost)
 add_library(boost::type_erasure ALIAS boost_type_erasure)
 set_property(TARGET boost_type_erasure PROPERTY EXPORT_NAME type_erasure)
 

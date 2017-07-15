@@ -36,6 +36,7 @@ src/winstances.cpp
 src/usinstances.cpp
 src/instances.cpp
 )
+set_target_properties(boost_regex PROPERTIES FOLDER Boost)
 add_library(boost::regex ALIAS boost_regex)
 set_property(TARGET boost_regex PROPERTY EXPORT_NAME regex)
 

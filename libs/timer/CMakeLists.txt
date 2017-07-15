@@ -14,6 +14,7 @@ add_library(boost_timer
 src/auto_timers_construction.cpp
 src/cpu_timer.cpp
 )
+set_target_properties(boost_timer PROPERTIES FOLDER Boost)
 add_library(boost::timer ALIAS boost_timer)
 set_property(TARGET boost_timer PROPERTY EXPORT_NAME timer)
 

@@ -21,8 +21,8 @@ find_package(boost_array)
 find_package(boost_config)
 find_package(boost_throw_exception)
 
-add_library(boost_algorithm INTERFACE
-)
+add_library(boost_algorithm INTERFACE)
+
 add_library(boost::algorithm ALIAS boost_algorithm)
 set_property(TARGET boost_algorithm PROPERTY EXPORT_NAME algorithm)
 

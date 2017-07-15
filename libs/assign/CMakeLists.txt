@@ -13,8 +13,8 @@ find_package(boost_array)
 find_package(boost_config)
 find_package(boost_preprocessor)
 
-add_library(boost_assign INTERFACE
-)
+add_library(boost_assign INTERFACE)
+
 add_library(boost::assign ALIAS boost_assign)
 set_property(TARGET boost_assign PROPERTY EXPORT_NAME assign)
 

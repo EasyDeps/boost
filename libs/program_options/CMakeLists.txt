@@ -30,6 +30,7 @@ src/parsers.cpp
 src/convert.cpp
 src/cmdline.cpp
 )
+set_target_properties(boost_program_options PROPERTIES FOLDER Boost)
 add_library(boost::program_options ALIAS boost_program_options)
 set_property(TARGET boost_program_options PROPERTY EXPORT_NAME program_options)
 

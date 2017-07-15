@@ -45,6 +45,7 @@ src/unit_test_log.cpp
 src/cpp_main.cpp
 src/test_tools.cpp
 )
+set_target_properties(boost_test PROPERTIES FOLDER Boost)
 add_library(boost::test ALIAS boost_test)
 set_property(TARGET boost_test PROPERTY EXPORT_NAME test)
 

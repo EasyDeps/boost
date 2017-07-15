@@ -21,6 +21,7 @@ src/slot.cpp
 src/connection.cpp
 src/signal_base.cpp
 )
+set_target_properties(boost_signals PROPERTIES FOLDER Boost)
 add_library(boost::signals ALIAS boost_signals)
 set_property(TARGET boost_signals PROPERTY EXPORT_NAME signals)
 

@@ -17,6 +17,7 @@ src/basic.cpp
 src/addr2line.cpp
 src/noop.cpp
 )
+set_target_properties(boost_stacktrace PROPERTIES FOLDER Boost)
 add_library(boost::stacktrace ALIAS boost_stacktrace)
 set_property(TARGET boost_stacktrace PROPERTY EXPORT_NAME stacktrace)
 

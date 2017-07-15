@@ -23,6 +23,7 @@ src/context.cpp
 src/fiber.cpp
 src/barrier.cpp
 )
+set_target_properties(boost_fiber PROPERTIES FOLDER Boost)
 add_library(boost::fiber ALIAS boost_fiber)
 set_property(TARGET boost_fiber PROPERTY EXPORT_NAME fiber)
 

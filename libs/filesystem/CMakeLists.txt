@@ -26,6 +26,7 @@ src/unique_path.cpp
 src/path.cpp
 src/path_traits.cpp
 )
+set_target_properties(boost_filesystem PROPERTIES FOLDER Boost)
 add_library(boost::filesystem ALIAS boost_filesystem)
 set_property(TARGET boost_filesystem PROPERTY EXPORT_NAME filesystem)
 

@@ -8,6 +8,7 @@ find_package(boost_core)
 
 add_library(boost_bind INTERFACE
 )
+
 add_library(boost::bind ALIAS boost_bind)
 set_property(TARGET boost_bind PROPERTY EXPORT_NAME bind)
 

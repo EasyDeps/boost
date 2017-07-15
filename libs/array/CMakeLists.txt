@@ -9,8 +9,8 @@ find_package(boost_static_assert)
 find_package(boost_config)
 find_package(boost_throw_exception)
 
-add_library(boost_array INTERFACE
-)
+add_library(boost_array INTERFACE)
+
 add_library(boost::array ALIAS boost_array)
 set_property(TARGET boost_array PROPERTY EXPORT_NAME array)
 

@@ -20,6 +20,7 @@ src/unsynchronized_pool_resource.cpp
 src/dlmalloc.cpp
 src/global_resource.cpp
 )
+set_target_properties(boost_container PROPERTIES FOLDER Boost)
 add_library(boost::container ALIAS boost_container)
 set_property(TARGET boost_container PROPERTY EXPORT_NAME container)
 

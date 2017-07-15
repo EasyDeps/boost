@@ -21,6 +21,7 @@ find_package(boost_utility)
 
 add_library(boost_bimap INTERFACE
 )
+
 add_library(boost::bimap ALIAS boost_bimap)
 set_property(TARGET boost_bimap PROPERTY EXPORT_NAME bimap)
 

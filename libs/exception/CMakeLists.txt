@@ -13,6 +13,7 @@ find_package(boost_throw_exception)
 add_library(boost_exception 
 src/clone_current_exception_non_intrusive.cpp
 )
+set_target_properties(boost_exception PROPERTIES FOLDER Boost)
 add_library(boost::exception ALIAS boost_exception)
 set_property(TARGET boost_exception PROPERTY EXPORT_NAME exception)
 

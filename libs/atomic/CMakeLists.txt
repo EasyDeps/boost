@@ -10,6 +10,7 @@ find_package(boost_config)
 add_library(boost_atomic 
 src/lockpool.cpp
 )
+set_target_properties(boost_atomic PROPERTIES FOLDER Boost)
 add_library(boost::atomic ALIAS boost_atomic)
 set_property(TARGET boost_atomic PROPERTY EXPORT_NAME atomic)
 

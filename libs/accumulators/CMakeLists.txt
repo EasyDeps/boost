@@ -23,8 +23,8 @@ find_package(boost_throw_exception)
 find_package(boost_numeric_conversion)
 find_package(boost_typeof)
 
-add_library(boost_accumulators INTERFACE
-)
+add_library(boost_accumulators INTERFACE)
+
 add_library(boost::accumulators ALIAS boost_accumulators)
 set_property(TARGET boost_accumulators PROPERTY EXPORT_NAME accumulators)
 

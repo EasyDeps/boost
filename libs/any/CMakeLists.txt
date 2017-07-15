@@ -11,8 +11,8 @@ find_package(boost_type_traits)
 find_package(boost_config)
 find_package(boost_throw_exception)
 
-add_library(boost_any INTERFACE
-)
+add_library(boost_any INTERFACE)
+
 add_library(boost::any ALIAS boost_any)
 set_property(TARGET boost_any PROPERTY EXPORT_NAME any)
 

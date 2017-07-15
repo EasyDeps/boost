@@ -9,8 +9,8 @@ find_package(boost_assert)
 find_package(boost_config)
 find_package(boost_throw_exception)
 
-add_library(boost_align INTERFACE
-)
+add_library(boost_align INTERFACE)
+
 add_library(boost::align ALIAS boost_align)
 set_property(TARGET boost_align PROPERTY EXPORT_NAME align)
 

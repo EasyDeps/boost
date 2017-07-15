@@ -13,6 +13,7 @@ add_library(boost_context
 src/execution_context.cpp
 src/dummy.cpp
 )
+set_target_properties(boost_context PROPERTIES FOLDER Boost)
 add_library(boost::context ALIAS boost_context)
 set_property(TARGET boost_context PROPERTY EXPORT_NAME context)
 
