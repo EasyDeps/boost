@@ -2,6 +2,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(boost)
 
+add_definitions(-DBOOST_ALL_NO_LIB)
+
 macro(find_package NAME)
     if(NOT "${NAME}" MATCHES "^boost_.*$")
         _find_package(${ARGV})
